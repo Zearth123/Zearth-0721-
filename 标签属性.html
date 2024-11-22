@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>标签属性</title>
+</head>
+<body>
+    <!--
+      背景颜色
+      元素居中
+      内边距
+    -->
+    <div style="
+      background-color: #ccccff;
+      text-align: center;
+      padding: 50px;
+    ">
+    <!--
+      图片url
+      设置图片名称
+      样式
+    -->
+      <img 
+      src='https://www.helloimg.com/i/2024/11/21/673ee9eb4ee00.jpg'
+      alt="mhy的0721小屋" 
+      width="120px"
+      height="120px"
+      >
+    </div>
+    <div style="
+        max-width: 700px;
+        margin: 30px auto;
+        padding 15px;
+        line-height: 1.4;
+    ">
+        <h1>标签属性</h1>
+        <h2>一些常用的含属性标签</h2>
+        <p>
+          <h3>&lta&gt标签:</h3>
+          <ul>
+            <li>href属性: 格式: &lta href="<u>超链接</u>"&gt链接附着的文字&lta&gt</li>
+            <li>target属性: 指定超链接的打开方式,格式: &lta href="..." target="_..."&gt链接附着的文字&lta&gt
+              <ul>
+                <li>_blank: 新标签页中打开</li>
+                <li>_parent: 在父窗口打开</li>
+                <li>_top: 跳出顶层窗口打开</li>
+                <li>_self": 当前页面跳转</li>
+              </ul>
+            </li>
+          </ul>
+        </p>
+        <p>
+          <h3>&ltimg&gt标签:</h3>
+          <ul>
+            <li>src属性: 插入的图片的url,格式: src="..."</li>
+            <li>alt属性: 图片无法显示时显示的文字,格式: alt="..."</li>
+          </ul>
+        </p>
+    </div>
+    <div style="
+        max-width: 700px;
+        margin: 30px auto;
+        padding 15px;
+        line-height: 1.4;
+    ">
+      <h2>块元素(<b>block</b>)</h2>
+      <p>
+        一个块独占一行<br>
+        占据整行宽度,呈现为一块独立的内容块<br>
+        可以嵌套其他块元素和行内元素<br>
+        常见的有&ltdiv&gt;&ltp&gt;&lthx&gt(标题);列表相关: &ltul&gt,&ltol&gt,&ltli&gt;&lttable&gt;&ltform&gt
+      </p>
+      <h2>行内元素(<b>inline</b>)</h2>
+      <p>
+        在同一行中呈现,不会独占一行<br>
+        只占据需要的宽度,不会占据整行<br>
+        只能嵌套其他行内元素<br>
+        常见的有&lta&gt;&ltimg&gt;&ltspan&gt;&ltinput&gt;&ltbr&gt;文本处理: &ltb&gt,&lti&gt,&ltu&gt,&lts&gt;
+      </p>
+      <p>
+        常见的三个属性:<br />
+        <ul>
+          <li>class: 创建一个类</li>
+          <li>style: 编写样式(<b>CSS</b>)</li>
+          <li>id: 标记一个唯一的,不能再被定义的值</li>
+        </ul>
+        用于块元素和行内元素设置,也即将让我们进入CSS的学习
+      </p>
+      <h3>&ltdiv&gt标签</h3>
+      <p>
+        常用于创建一个网页的各个部分,如导航栏,页眉,页脚等<br>
+        <h4>&ltclass&gt="..."</h4>
+        填入类的名称,提示div的用途
+      </p>
+      <h3>&ltspan&gt标签</h3>
+      <p>
+        用于包装元素,以便于设置样式等<br>
+        在后续CSS,JS中深入再探索
+      </p>  
+    </div>
+    
+    <div style="
+        text-align: center;
+        padding: 50px;
+    ">
+        <p>Day Ⅰ</p>
+    </div>
+    <div style="
+    background-color: #ccccff;
+    text-align: center;
+    padding: 40px;
+    font-size: 12px;
+  ">
+  <p>Welcome to MHY's 0721-house</p>
+  <a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank">学习探索更多</a>
+  </div>
+</body>
+</html>

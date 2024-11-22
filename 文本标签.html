@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>常用文本标签</title>
+</head>
+<body>
+    <!--
+      背景颜色
+      元素居中
+      内边距
+    -->
+    <div style="
+      background-color: #ccccff;
+      text-align: center;
+      padding: 50px;
+    ">
+    <!--
+      图片url
+      设置图片名称
+      样式
+    -->
+      <img 
+      src='https://www.helloimg.com/i/2024/11/21/673ee9eb4ee00.jpg'
+      alt="mhy的0721小屋" 
+      width="120px"
+      height="120px"
+      >
+    </div>
+    <div style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding 15px;
+    line-height: 1.4;
+    ">
+        <h1>文本标签</h1>
+        <a href="https://www.toolhelper.cn/Html/EscapeChar"><h2>特殊字符的转义</h2></a>
+        <h2>文本换行</h2>
+        <p>使用单标签&ltbr /&gt在行末换行</p>
+        <h2>分割线</h2>
+        <p>
+            使用单标签&lthr&gt创建分割线<br>
+            效果如下:<br>
+            <hr>
+        </p>
+        <h2>文字加粗</h2>
+        <p>
+            使用&ltb&gt加粗&lt/b&gt或者<br />
+            &ltstrong&gt加粗&lt/strong&gt
+        </p>
+        <p>效果: <b>加粗</b></p>
+        <h2>文字斜体</h2>
+        <p>使用&lti&gt斜体&lti&gt</p>
+        <p>效果: <i>斜体</i></p>
+        <h2>下划线</h2>
+        <p>使用&ltu&gt下划线&ltu&gt</p>
+        <p>效果: <u>下划线</u></p>
+        <h2>删除线</h2>
+        <p>使用&lts&gt删除线&lts&gt</p>
+        <p>效果: <i>删除线</i></p>
+    </div>
+    <div style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding 15px;
+    line-height: 1.4;
+  ">
+        <h2>列表</h2>
+        <h3>无序列表</h3>
+        <p>
+            先使用无序列表标签&ltul&gt与&lt/ul&gt将列表内容包括起来<br />
+            每一行使用列表行标签&ltli&gt与&lt/li&gt包括每行内容
+        </p>
+        <h3>有序列表</h3>
+        <p>
+            基本同上,有序列表标签为&ltol&gtyu&lt/ol&gt
+        </p>
+    </div>
+    <div style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding 15px;
+    line-height: 1.4;
+  ">
+        <h2>表格</h2>
+        <p>结合后续的CSS学习会改进本节的表格样式,但基本框架相同</p>
+        <p>先使用&lttable&gt与&lt/table&gt将表格内容包括起来</p>
+        <p>
+            按行或按列绘制均可,如按行:<br />
+            以&lttr&gt与&lt/tr&gt包括一行的元素<br />
+        </p>
+        <p>
+            当打印表头时:<br />
+            使用&ltth&gt表头&lt/th&gt<br />
+            使用&ltth&gt列表头1&lt/th&gt<br />
+            使用&ltth&gt列表头2&lt/th&gt<br />
+            使用&ltth&gt列表头3&lt/th&gt<br />
+            ...<br />
+        </p>    
+        <p>    
+            当打印元素内容时:<br />
+            使用&ltth&gt行表头1&lt/th&gt<br />
+            使用&lttd&gt元素11&lttd&gt<br />
+            使用&lttd&gt元素12&lttd&gt<br />
+            使用&lttd&gt元素13&lttd&gt<br />
+            ...<br />
+        </p>    
+        <p>    
+            以数行以上内容打印出表格<br />
+            效果如下:<br />
+            <table>
+                <tr>
+                    <th>表头
+                    <th>表头11</th>
+                    <th>表头12</th>
+                    <th>表头13</th>
+                </tr>
+                <tr>
+                    <th>表头11</th>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <th>表头21</th>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+                <tr>
+                    <th>表头31</th>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                </tr>
+            </table>
+        </p>
+    </div>
+    <div style="
+    max-width: 700px;
+    margin: 30px auto;
+    padding 15px;
+    line-height: 1.4;
+  ">
+        <h2>表单</h2>
+        <p>
+            建议在先阅读<a href="标签属性.html" target="_blank">后在进行了解</a>
+            <a href="HTML表单" target="_blank"><h3>表单的使用<h3></a>
+        </p>
+    </div>
+    <div style="
+        text-align: center;
+        padding: 50px;
+    ">
+        <p>Day Ⅰ</p>
+    </div>
+    <div style="
+      background-color: #ccccff;
+      text-align: center;
+      padding: 40px;
+      font-size: 12px;
+    ">
+    <p>Welcome to MHY's 0721-house</p>
+    <a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank">学习探索更多</a>
+</div>
+</body>
+</html>

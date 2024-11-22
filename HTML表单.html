@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>*表单</title>
+</head>
+<body>
+     <!--
+      背景颜色
+      元素居中
+      内边距
+    -->
+    <div style="
+      background-color: #ccccff;
+      text-align: center;
+      padding: 50px;
+    ">
+    <!--
+      图片url
+      设置图片名称
+      样式
+    -->
+      <img 
+      src='https://www.helloimg.com/i/2024/11/21/673ee9eb4ee00.jpg'
+      alt="mhy的0721小屋" 
+      width="120px"
+      height="120px"
+      >
+    </div>
+    <div style="
+      max-width: 700px;
+      margin: 30px auto;
+      padding 15px;
+      line-height: 1.7;
+    ">
+        <h1>表单</h1>
+        <p>
+            使用标签&ltform&gt与&lt/form&gt来包括一个表单的内容<br>
+            表单内常嵌套的标签:
+            <ul>
+                <li>
+                    &ltlabel&gt: 创建一个项目<br>
+                    格式: &ltlabel&gt项目名<br>
+                    for="...":与&ltinput&gt的<b>id</b>属性对应使用
+                </li>
+                <li>
+                    &ltinput&gt: 输入项目内容,仅限于和&ltlabel&gt对应使用<br>
+                    需要使用到的属性:
+                    <ul>
+                        <li>
+                            type="...":输入内容的类型<br>
+                            常用:
+                            <ul>
+                                <li>
+                                    text: 输入文本内容<br>
+                                    会生成一个文本框
+                                    格式: &ltinput type="text"&gt
+                                </li>
+                                <li>
+                                    password: 密码类别,输入内容会被'*'代替
+                                </li>
+                                <li>
+                                    radio: 生成选择框<br>
+                                    <ul>
+                                        <li>
+                                            多选模式: 完成上述操作后的默认状态
+                                        </li>
+                                        <li>
+                                            单选模式: 需添加&ltinput&gt的属性name="..."<br>
+                                            在name属性值相同的选项中只能选择一个
+                                        </li>
+                                    </ul>
+                                    格式: &ltinput type="radio" name="..."&gt选项名
+                                </li>
+                                <li>
+                                    checkbox: 生成勾选框,大致与radio类型用法相同
+                                </li>
+                                <li>
+                                    submit: 生成提交按钮<br>
+                                    默认文字是: 提交<br>
+                                    可以通过value="..."修改文字内容
+                                    如需提交数据至服务器,应添加&ltform&gt的<b>action="url"</b>属性
+                                </li>
+                            </ul>
+                        </li>
+                        <li>placeholder="...":在输入区呈现的提示性内容</li>
+                        <li>value="...":在输入区预先填入的内容</li>
+                    </ul>
+                </li>
+            </ul>
+        </p>
+    </div>
+    
+    <div style="
+        text-align: center;
+        padding: 50px;
+    ">
+        <p>Day Ⅰ</p>
+    </div>
+    <div style="
+        background-color: #ccccff;
+        text-align: center;
+        padding: 40px;
+        font-size: 12px;
+    ">
+        <p>Welcome to MHY's 0721-house</p>
+        <a href="https://developer.mozilla.org/zh-CN/docs/Learn/Getting_started_with_the_web" target="_blank">学习探索更多</a>
+    </div>
+</body>
+</html>
